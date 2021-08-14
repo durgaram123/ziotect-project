@@ -1,0 +1,145 @@
+{% extends 'public/base.html' %}
+{% load static %}
+{% block content %}
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{% url 'home' %}">
+            <span>
+              ZIOTECH
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  ">
+              <li class="nav-item ">
+                <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}"> About</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="{% url 'service' %}">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'news' %}">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+              </li>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+              </form>
+            </ul>
+            <div class="quote_btn-container">
+              <a href="" class="quote_btn">
+                Get A Quote
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="container-fluid">
+      <div class="heading_container">
+        <h2>
+          Our Services
+        </h2>
+        <p>
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div class="service_container">
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'public/images/s1.png' %}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Managed IT services
+
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'public/images/s2.png' %}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Cloud Services
+
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'public/images/s3.png' %}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Cyber security
+
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="{% static 'public/images/s4.png' %}" alt="">
+          </div>
+          <div class="detail-box">
+            <h5>
+              Business Consulting
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          See More
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- end service section -->
+
+
+  <!-- info section -->
+
+ 
+  <!-- end info section -->
+
+
+
+
+</body>
+{% endblock %}
